@@ -1,5 +1,5 @@
 ---
-{"title":"浅谈数据库设计中的数据类型优化","categories":["实战教学"],"tags":["数据库","优化","架构"],"dg-publish":true,"permalink":"//my-sql/","dgPassFrontmatter":true}
+{"title":"浅谈数据库设计中的数据类型优化","categories":["实战教学"],"tags":["数据库","优化","架构"],"dg-publish":true,"permalink":"/架构设计/浅谈MySQL数据库设计中的数据类型优化/","dgPassFrontmatter":true}
 ---
 
 
