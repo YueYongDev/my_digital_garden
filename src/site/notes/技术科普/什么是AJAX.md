@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"//ajax/","title":"科普系列——如何解释什么是 AJAX？","tags":["计算机网络"]}
+{"title":"科普系列——如何解释什么是 AJAX？","categories":["技术科普"],"tags":["计算机网络"],"cover":"https://upload-images.jianshu.io/upload_images/5666077-9f45d4321e209d94.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240","dg-publish":true,"permalink":"//ajax/","dgPassFrontmatter":true}
 ---
 
 
