@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/00/effective-tensor-flow/"}
+{"dg-publish":true,"permalink":"/00/effective-tensor-flow/","dgPassFrontmatter":true}
 ---
 
 1. [[外文翻译/EffectiveTensorFlow/01. TensorFlow 基础\|01. TensorFlow 基础]]
