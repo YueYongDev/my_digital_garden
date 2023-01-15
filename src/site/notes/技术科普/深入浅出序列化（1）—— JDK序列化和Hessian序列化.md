@@ -1,5 +1,5 @@
 ---
-{"title":"深入浅出序列化（1）—— JDK序列化和Hessian序列化","categories":["技术科普"],"tags":["序列化"],"cover":"https://cdn.ytools.xyz/uPic/sQ7UHdiShot2021-08-01%2022.55.13.png","dg-publish":true,"permalink":"//1-jdk-hessian/","dgPassFrontmatter":true}
+{"title":"深入浅出序列化（1）—— JDK序列化和Hessian序列化","categories":["技术科普"],"tags":["序列化"],"cover":"https://cdn.ytools.xyz/uPic/sQ7UHdiShot2021-08-01%2022.55.13.png","dg-publish":true,"permalink":"/技术科普/深入浅出序列化（1）—— JDK序列化和Hessian序列化/","dgPassFrontmatter":true}
 ---
 
 
