@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"//m1-intel-x86-arm/"}
+{"dg-publish":true,"permalink":"//m1-intel-x86-arm/","dgPassFrontmatter":true}
 ---
 
 
