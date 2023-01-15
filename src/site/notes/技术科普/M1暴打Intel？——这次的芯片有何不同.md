@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"//m1-intel/"}
+{"dg-publish":true,"permalink":"//m1-intel/","dgPassFrontmatter":true}
 ---
 
 
