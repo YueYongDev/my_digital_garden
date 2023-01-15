@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"//lombok/","dgPassFrontmatter":true}
+{"dg-publish":true,"permalink":"/技术科普/Lombok原理探析/","dgPassFrontmatter":true}
 ---
 
 
