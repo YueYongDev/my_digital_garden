@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"//anything-as-a-service/","dgPassFrontmatter":true}
+{"dg-publish":true,"permalink":"/技术科普/云计算之 Anything As a Service/","dgPassFrontmatter":true}
 ---
 
 
