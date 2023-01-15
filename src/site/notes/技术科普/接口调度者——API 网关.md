@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"//api/","dgPassFrontmatter":true}
+{"dg-publish":true,"permalink":"/技术科普/接口调度者——API 网关/","dgPassFrontmatter":true}
 ---
 
 
