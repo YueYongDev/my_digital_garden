@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"//m1-intel-x86-arm/","dgPassFrontmatter":true}
+{"dg-publish":true,"permalink":"/技术科普/M1暴打Intel——x86与ARM的爱恨情仇/","dgPassFrontmatter":true}
 ---
 
 
