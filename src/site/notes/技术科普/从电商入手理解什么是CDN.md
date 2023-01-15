@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"//cdn/"}
+{"dg-publish":true,"cover":"https://cdn.ytools.xyz/uPic/xzlGcO1240-20230113010350410.jpeg","permalink":"//cdn/","dgPassFrontmatter":true}
 ---
 
 ## 前言
