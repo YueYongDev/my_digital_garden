@@ -1,5 +1,5 @@
 ---
-{"title":"人人都是 LSP？—— 种子与文件下载的相爱相杀","categories":["技术科普"],"tags":["计算机网络"],"cover":"https://cdn.ytools.xyz/uPic/008eGmZEly1gmj1jm2yvtj30r3094wgy.jpg","dg-publish":true,"permalink":"//lsp/","dgPassFrontmatter":true}
+{"title":"人人都是 LSP？—— 种子与文件下载的相爱相杀","categories":["技术科普"],"tags":["计算机网络"],"cover":"https://cdn.ytools.xyz/uPic/008eGmZEly1gmj1jm2yvtj30r3094wgy.jpg","dg-publish":true,"permalink":"/技术科普/人人都是LSP？—— 种子与文件下载的相爱相杀/","dgPassFrontmatter":true}
 ---
 
 
