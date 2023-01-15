@@ -1,5 +1,5 @@
 ---
-{"title":"聊一聊 RPC","categories":["技术科普"],"tags":["RPC"],"cover":"https://cdn.ytools.xyz/uPic/007S8ZIlly1gfqhpu7ayzj30p00anq3q.jpg","dg-publish":true,"permalink":"//rpc/","dgPassFrontmatter":true}
+{"title":"聊一聊 RPC","categories":["技术科普"],"tags":["RPC"],"cover":"https://cdn.ytools.xyz/uPic/007S8ZIlly1gfqhpu7ayzj30p00anq3q.jpg","dg-publish":true,"permalink":"/技术科普/聊一聊RPC/","dgPassFrontmatter":true}
 ---
 
 
