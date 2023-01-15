@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"//13-flutter/","title":"【译】13 个你应该选择/考虑使用 Flutter 的理由","tags":["掘金翻译计划,Flutter"]}
+{"title":"【译】13 个你应该选择/考虑使用 Flutter 的理由","categories":"外文翻译","tags":["掘金翻译计划,Flutter"],"dg-publish":true,"permalink":"//13-flutter/","dgPassFrontmatter":true}
 ---
 
 ---
