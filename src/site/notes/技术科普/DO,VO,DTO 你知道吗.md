@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"//do-vo-dto/"}
+{"dg-publish":true,"permalink":"//do-vo-dto/","dgPassFrontmatter":true}
 ---
 
 
