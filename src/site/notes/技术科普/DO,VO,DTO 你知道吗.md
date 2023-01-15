@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"//do-vo-dto/","dgPassFrontmatter":true}
+{"dg-publish":true,"permalink":"/技术科普/DO,VO,DTO 你知道吗/","dgPassFrontmatter":true}
 ---
 
 
