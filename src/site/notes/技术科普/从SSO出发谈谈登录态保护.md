@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"//sso/","title":"从SSO出发谈谈登录态保护","tags":["SSO"]}
+{"title":"从SSO出发谈谈登录态保护","categories":["技术科普"],"tags":["SSO"],"dg-publish":true,"permalink":"//sso/","dgPassFrontmatter":true}
 ---
 
 
