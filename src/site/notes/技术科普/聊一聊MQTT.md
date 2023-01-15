@@ -1,5 +1,5 @@
 ---
-{"title":"简单聊一聊MQTT","categories":["技术科普"],"tags":["MQTT"],"cover":"https://cdn.ytools.xyz/uPic/cJxa8Eimage.png","dg-publish":true,"permalink":"//mqtt/","dgPassFrontmatter":true}
+{"title":"简单聊一聊MQTT","categories":["技术科普"],"tags":["MQTT"],"cover":"https://cdn.ytools.xyz/uPic/cJxa8Eimage.png","dg-publish":true,"permalink":"/技术科普/聊一聊MQTT/","dgPassFrontmatter":true}
 ---
 
 
