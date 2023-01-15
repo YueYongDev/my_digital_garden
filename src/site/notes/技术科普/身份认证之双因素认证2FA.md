@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"//2-fa/","title":"身份认证之双因素认证 2FA","tags":["计算机网络"]}
+{"title":"身份认证之双因素认证 2FA","categories":["技术科普"],"tags":["计算机网络"],"cover":"https://ytools.xyz/uPic/%E8%BA%AB%E4%BB%BD%E8%AE%A4%E8%AF%811.png","dg-publish":true,"permalink":"//2-fa/","dgPassFrontmatter":true}
 ---
 
 
