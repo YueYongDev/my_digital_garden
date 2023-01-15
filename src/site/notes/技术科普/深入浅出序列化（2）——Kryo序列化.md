@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"//2-kryo/","title":"深入浅出序列化（2）——Kryo序列化","tags":["序列化"]}
+{"title":"深入浅出序列化（2）——Kryo序列化","categories":["技术科普"],"tags":["序列化"],"dg-publish":true,"permalink":"//2-kryo/","dgPassFrontmatter":true}
 ---
 
 
