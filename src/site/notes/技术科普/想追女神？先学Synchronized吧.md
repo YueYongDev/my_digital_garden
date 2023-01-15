@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"//synchronized/"}
+{"dg-publish":true,"permalink":"//synchronized/","dgPassFrontmatter":true}
 ---
 
 在之前的[[技术科普/从找对象到多线程\|从找对象到多线程]]一文中我曾介绍了一些和多线程有关的知识，而谈到多线程，就一定离不开「锁」这个名词。在 Java 中，锁的使用主要有两种：Synchronized 关键字和 Lock 接口，本文将会换个角度来聊一聊 synchronized 中的锁。
