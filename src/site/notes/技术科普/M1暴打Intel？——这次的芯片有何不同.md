@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"//m1-intel/","dgPassFrontmatter":true}
+{"dg-publish":true,"permalink":"/技术科普/M1暴打Intel？——这次的芯片有何不同/","dgPassFrontmatter":true}
 ---
 
 
