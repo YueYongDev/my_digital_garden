@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"//low-code/"}
+{"dg-publish":true,"permalink":"//low-code/","dgPassFrontmatter":true}
 ---
 
 
