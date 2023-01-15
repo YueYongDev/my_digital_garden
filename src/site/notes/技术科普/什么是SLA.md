@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"//sla/","title":"什么是SLA","tags":["系统架构"]}
+{"title":"什么是SLA","categories":["技术科普"],"tags":["系统架构"],"cover":"https://cdn.ytools.xyz/uPic/e6c9d24egy1h57kddbxxkj20l605s0so.jpg","dg-publish":true,"permalink":"//sla/","dgPassFrontmatter":true}
 ---
 
 
