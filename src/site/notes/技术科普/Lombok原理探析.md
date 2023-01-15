@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"//lombok/"}
+{"dg-publish":true,"permalink":"//lombok/","dgPassFrontmatter":true}
 ---
 
 
