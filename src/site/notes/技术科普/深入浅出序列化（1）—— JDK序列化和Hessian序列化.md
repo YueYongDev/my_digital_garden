@@ -5,7 +5,7 @@
 
 ![](https://cdn.ytools.xyz/uPic/sQ7UHdiShot2021-08-01%2022.55.13.png)
 
-我之前在[《聊一聊 RPC》](https://mp.weixin.qq.com/s/R8UJFu_aKjOhjKdvbhy1AQ)中曾提过什么是序列化和反序列化，当时有说过之后要单独抽出一期来详细聊聊序列化，没想到这一拖竟然拖了一年多，现在来把这个坑补上。由于篇幅较长，本文先主要介绍两种常见的序列化方式——JDK 序列化和 Hessian 序列化。
+我之前在[[技术科普/浅入浅出 RPC\|《浅入浅出RPC》]]中曾提过什么是序列化和反序列化，当时有说过之后要单独抽出一期来详细聊聊序列化，没想到这一拖竟然拖了一年多，现在来把这个坑补上。由于篇幅较长，本文先主要介绍两种常见的序列化方式——JDK 序列化和 Hessian 序列化。
 
 ![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7fe49e9f71434f79975b728283fa4621~tplv-k3u1fbpfcp-zoom-1.image)
 
@@ -17,9 +17,9 @@
 
 这么说太抽象了，举一个例子：你如果想让一个女孩子知道你喜欢她，你可以给她写情书，这样 **「喜欢」** 这种状态信息就变成了 **「文字」** 这种可以存储或传输的信息。
 
-至于怎么把“情书”送给女生就有很多种方式了，我在[《聊一聊 RPC》](https://mp.weixin.qq.com/s/R8UJFu_aKjOhjKdvbhy1AQ)中已经有写过了，感兴趣的读者们可以点击阅读。
+至于怎么把“情书”送给女生就有很多种方式了，我在[[技术科普/浅入浅出 RPC\|《浅入浅出RPC》]]中已经有写过了，感兴趣的读者们可以点击阅读。
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b2b568e10705436eb2e6ddba8c0cf94b~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://cdn.ytools.xyz/uPic/b2b568e10705436eb2e6ddba8c0cf94b~tplv-k3u1fbpfcp-zoom-1.jpeg)
 
 所以，简单理解序列化就是将“对象”存储的信息保存到某个“文件”中，之后再通过某种方式读取“文件”转换成对象。在 Java 中，序列化其实就是把一个 Java 对象变成二进制内容，本质上就是一个 byte[]数组。
 
@@ -35,7 +35,7 @@ JVM 是 Java 程序运行的环境，但是他同时是一个操作系统的一�
 
 举个例子，如果没办法自己亲自把情书送到对方手上，是不是得找一个人送过去？这就是 RPC 相关的知识了。
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9664e64be4d54f36bb53409a4b8787c6~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://cdn.ytools.xyz/uPic/9664e64be4d54f36bb53409a4b8787c6~tplv-k3u1fbpfcp-zoom-1.jpeg)
 
 ## 怎么序列化（How）
 
@@ -47,11 +47,11 @@ JVM 是 Java 程序运行的环境，但是他同时是一个操作系统的一�
 
 作为一个成熟的编程语言，Java 本身就已经提供了序列化的方法了，因此我们也选择把他作为第一个介绍的序列化方式。
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e2dce6295ad4443289ecc59235d2f2a7~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://cdn.ytools.xyz/uPic/e2dce6295ad4443289ecc59235d2f2a7~tplv-k3u1fbpfcp-zoom-1.jpeg)
 
 JDK 自带的序列化方式，使用起来非常方便，只需要序列化的类实现了**Serializable**接口即可，Serializable 接口没有定义任何方法和属性，所以只是起到了**标识**的作用，**表示这个类是可以被序列化的。**如果想把一个 Java 对象变为 byte[]数组，需要使用**ObjectOutputStream**。它负责把一个 Java 对象写入一个字节流：
 
-```yaml
+```java
 public class Main {
     public static void main(String[] args) throws IOException {
         ByteArrayOutputStream buffer = new ByteArrayOutputStream();
@@ -72,7 +72,7 @@ public class Main {
 
 上面代码输出的是如下的 Byte 数组：
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/caadbbd216514ba0921bdcb9564f63c0~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://cdn.ytools.xyz/uPic/caadbbd216514ba0921bdcb9564f63c0~tplv-k3u1fbpfcp-zoom-1.png)
 
 #### serialVersionUID
 
@@ -94,13 +94,13 @@ Hessian 是一种动态类型、二进制序列化和 Web 服务协议，专为�
 
 和 JDK 自带的序列化方式类似，Hessian 采用的也是二进制协议，只不过 Hessian 序列化之后，字节数更小，性能更优。目前 Hessian 已经出到 2.0 版本，相较于 1.0 的 Hessian 性能更优。相较于 JDK 自带的序列化，Hessian 的设计目标更明确 👇
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c5f23e9ec11344a19ee55b9f6a122ad4~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://cdn.ytools.xyz/uPic/c5f23e9ec11344a19ee55b9f6a122ad4~tplv-k3u1fbpfcp-zoom-1.png)
 
 #### 序列化实现方式
 
 之所以说 Hessian 序列化之后的数据字节数更小，和他的实现方式密不可分，以 int 存储整数为例，我们通过官网的说明可以发现存储逻辑如下 👇
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/54bf77d2d08e4950971d1da3246007b8~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://cdn.ytools.xyz/uPic/54bf77d2d08e4950971d1da3246007b8~tplv-k3u1fbpfcp-zoom-1.png)
 
 翻译一下就是：
 
@@ -110,13 +110,13 @@ Hessian 是一种动态类型、二进制序列化和 Web 服务协议，专为�
 
 存对象也很简单，如下：
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/84b5e513fce64432940d53f241169aa0~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://cdn.ytools.xyz/uPic/84b5e513fce64432940d53f241169aa0~tplv-k3u1fbpfcp-zoom-1.png)
 
 对于 Hessian 支持的数据结构，官网均有序列化的语法，详情可参考 👉[Serialization](http://hessian.caucho.com/doc/hessian-serialization.html#anchor4)
 
 而且，和 JDK 自带序列化不同的是，如果一个对象之前出现过，hessian 会直接插入一个 R index 这样的块来表示一个引用位置，从而省去再次序列化和反序列化的时间。
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c7c7164aa5a441a68b3666116687528f~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://cdn.ytools.xyz/uPic/c7c7164aa5a441a68b3666116687528f~tplv-k3u1fbpfcp-zoom-1.png)
 
 也正是因为如此，Hessian 的序列化速度相较于 JDK 序列化才更快。只不过 Java 序列化会把要序列化的对象类的元数据和业务数据全部序列化从字节流，并且会保留完整的继承关系，因此相较于 Hessian 序列化更加可靠。
 
@@ -126,7 +126,7 @@ Hessian 是一种动态类型、二进制序列化和 Web 服务协议，专为�
 
 空口无凭，我们以一个小 demo 来测试一下：
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1d8ac85be211445eab3202d0eaa6eefd~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://cdn.ytools.xyz/uPic/1d8ac85be211445eab3202d0eaa6eefd~tplv-k3u1fbpfcp-zoom-1.png)
 
 使用之前记得先引入依赖哦
 
