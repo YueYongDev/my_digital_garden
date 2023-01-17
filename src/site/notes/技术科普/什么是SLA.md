@@ -1,5 +1,5 @@
 ---
-{"title":"什么是SLA","categories":["技术科普"],"tags":["系统架构"],"cover":"https://cdn.ytools.xyz/uPic/e6c9d24egy1h57kddbxxkj20l605s0so.jpg","dg-publish":true,"permalink":"/技术科普/什么是SLA/","dgPassFrontmatter":true}
+{"title":"什么是SLA","tags":["系统架构"],"dg-publish":true,"permalink":"/技术科普/什么是SLA/","dgPassFrontmatter":true}
 ---
 
 
@@ -104,12 +104,12 @@ SLA，是服务供应商与客户之间的服务等级协议，它定义了服�
 
 > 可用性 = 系统正常运行时间 / 统计周期内的总时间
 
-关于系统的可用性，之前已经写过一篇了，可以参考👉[《你的系统可用性 5 个 9 了吗？》](https://mp.weixin.qq.com/s/sj5Gwqup3zo3-2BxyIi5rg)
+关于系统的可用性，之前已经写过一篇了，可以参考👉[[技术科普/你的系统可用性5个9了吗\|《你的系统可用性 5 个 9 了吗？》]]
 
 ### 不同SLA不同的成本
 
 ![](https://cdn.ytools.xyz/uPic/e6c9d24egy1h57kddbxxkj20l605s0so.jpg)
 
-**「取舍」**是软件工程中亘古不变的主题，一个有明确SLA的服务最理想的运行状态是： **增加额外资源来改进系统所带来的收益小于把该资源投给其他服务所带来的收益。**
+**「取舍」** 是软件工程中亘古不变的主题，一个有明确SLA的服务最理想的运行状态是： **增加额外资源来改进系统所带来的收益小于把该资源投给其他服务所带来的收益。**
 
 一个简单的例子就是某服务可用性从99.9%提高到99.99%所需要的资源和带来的收益之比，是决定该服务是否应该提供4个9的重要依据。
