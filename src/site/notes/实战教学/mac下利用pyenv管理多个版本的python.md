@@ -19,7 +19,7 @@
 
 ## pyenv的安装
 1. 安装工具：[brew](https://brew.sh/index_zh-cn)
-2. 系统环境：![](https://upload-images.jianshu.io/upload_images/5666077-b573ed4d6756ec14.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+2. 系统环境：![](https://cdn.ytools.xyz/uPic/5666077-b573ed4d6756ec14.png)
 
 ### 通过homebrew安装
 
@@ -85,10 +85,10 @@ pyenv --help
 
 上面命令行的意思是获取 prenv 的帮助信息。
 
-![](https://upload-images.jianshu.io/upload_images/5666077-e0358401b5843a4b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://cdn.ytools.xyz/uPic/5666077-e0358401b5843a4b.png)
 
 ## pyenv的常用命令
-![](https://upload-images.jianshu.io/upload_images/5666077-1dc672875082b73b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://cdn.ytools.xyz/uPic/5666077-1dc672875082b73b.png)
 
 上图是官方文档中的例子，以下是整理的一些pyenv的常用命令，如果想要查看完整命令列表，可以点击查看[pyenv命令列表](https://github.com/pyenv/pyenv/blob/master/COMMANDS.md#command-reference)
 
@@ -98,7 +98,7 @@ pyenv --help
 pyenv install --list
 ```
 
-![查看可以安装的版本](https://upload-images.jianshu.io/upload_images/5666077-34180201b67c6a5a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/540)
+![查看可以安装的版本](https://cdn.ytools.xyz/uPic/5666077-34180201b67c6a5a.png)
 
 * 查看已经安装的python版本
 
@@ -106,7 +106,7 @@ pyenv install --list
 pyenv versions
 ```
 
-![查看已经安装的版本](https://upload-images.jianshu.io/upload_images/5666077-b3cd0f47a0508a22.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/540)
+![查看已经安装的版本](https://cdn.ytools.xyz/uPic/5666077-b3cd0f47a0508a22.png)
 
 * 查看当前使用的python版本
 
@@ -114,7 +114,7 @@ pyenv versions
 pyenv version
 ```
 
-![查看当前使用的Python版本](https://upload-images.jianshu.io/upload_images/5666077-5a4b5af4f711a865.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/540)
+![查看当前使用的Python版本](https://cdn.ytools.xyz/uPic/5666077-5a4b5af4f711a865.png)
 
 * 安装一个python版本如3.5.6
 
@@ -144,7 +144,8 @@ pyenv global 3.5.6
 
 * 这个时候确认一下当前python的版本
 
-![确认当前python的版本](https://upload-images.jianshu.io/upload_images/5666077-4b911293e5787e60.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/540)
+![确认当前python的版本](https://cdn.ytools.xyz/uPic/5666077-4b911293e5787e60.png)
+
 发现已经更改为3.5.6了
 
 * 设置目录级python版本如3.5.6
@@ -164,7 +165,7 @@ pyenv shell 3.5.6
 1. `pyenv install [version]`下载太慢
 只需要在python的官网下载你需要的python版本的`tar.xz`文件然后放到 `/User/.pyenv/cache`中然后再执行`pyenv install [version]`就可以了
 
-![下载第二个文件](https://upload-images.jianshu.io/upload_images/5666077-4c9dbf9675a8f1c6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/540)
+![下载第二个文件](https://cdn.ytools.xyz/uPic/5666077-4c9dbf9675a8f1c6.png)
 
 > 在这里提一下：`/.pyenv` 在mac中是隐藏文件夹，mac显示隐藏文件夹的快捷键是：`shift+command+.`
 
