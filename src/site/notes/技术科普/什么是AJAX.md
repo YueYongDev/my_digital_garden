@@ -1,5 +1,5 @@
 ---
-{"title":"科普系列——如何解释什么是 AJAX？","categories":["技术科普"],"tags":["计算机网络"],"cover":"https://upload-images.jianshu.io/upload_images/5666077-9f45d4321e209d94.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240","dg-publish":true,"permalink":"/技术科普/什么是AJAX/","dgPassFrontmatter":true}
+{"title":"科普系列——如何解释什么是 AJAX？","categories":["技术科普"],"tags":["计算机网络"],"dg-publish":true,"permalink":"/技术科普/什么是AJAX/","dgPassFrontmatter":true}
 ---
 
 
@@ -35,11 +35,11 @@
 
 不急不急，我们先来看一个生活中非常常见的例子 🌰：
 
-![](https://upload-images.jianshu.io/upload_images/5666077-abeef41042891d22.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://cdn.ytools.xyz/uPic/5666077-abeef41042891d22.jpg)
 
 这种场景在上学的时候很常见，其实 AJAX 的原理和上述流程很相似，不信你看下面：
 
-![](https://upload-images.jianshu.io/upload_images/5666077-269d112e62ac5a37.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://cdn.ytools.xyz/uPic/5666077-269d112e62ac5a37.jpg)
 
 在上述例子中，核心是班长（也就是 HXR 对象），班主任可以通过他传递消息（客户端构建 XHR 对象发送请求）然后收到响应。在班长去通知小明的过程中，班主任仍然可以继续手头的工作，这就是一个异步的过程。（果然生活处处皆学问）
 
@@ -163,23 +163,23 @@ wx.request({
 
 首先我们打开 Chrome 浏览器，然后进入开发者工具（按 F12 或者网页右击选择“检查”），选择**Network**选项卡，我们可以发现下面有很多东西，比如 Filter、All、HXR、JS 等等，通过这个工具这里我们可以看见一个网页渲染过程中的所有请求（不只是 XHR，还有 JS、CSS 等）。
 
-![](https://upload-images.jianshu.io/upload_images/5666077-f24f921a3097d63b.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://cdn.ytools.xyz/uPic/5666077-f24f921a3097d63b.jpg)
 
 随后我们选择 XHR，就会出现请求这个网页过程中的所有的 XHR 请求了。包括 name、status、size 等信息。
 
-![](https://upload-images.jianshu.io/upload_images/5666077-4e94aa9a30590069.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://cdn.ytools.xyz/uPic/5666077-4e94aa9a30590069.jpg)
 
 之前提到过了，我们通过 XHR 携带的数据返回给浏览器渲染页面，到底是怎么实现的呢？不急，我们先来看一下现在的页面是什么样的：
 
-![](https://upload-images.jianshu.io/upload_images/5666077-0897c3b047592149.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://cdn.ytools.xyz/uPic/5666077-0897c3b047592149.jpg)
 
 其实这些东西都在其中一个 XHR 中，于是我们随便点击一个名为*query*的 XHR 对象（其实并不是随便点击的 😜），然后移到**Response**选项卡：
 
-![](https://upload-images.jianshu.io/upload_images/5666077-a23ae5f4a574780c.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://cdn.ytools.xyz/uPic/5666077-a23ae5f4a574780c.jpg)
 
 我们看到了很长的一段 JSON 数据，格式化后（这里我们可以直接切换到**Preview**选项卡）筛选出一部分可以看到：
 
-![](https://upload-images.jianshu.io/upload_images/5666077-20648c5ef9c37eb7.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://cdn.ytools.xyz/uPic/5666077-20648c5ef9c37eb7.jpg)
 
 是不是刚才那个页面里面的东西都在这里面呢？
 
@@ -187,7 +187,7 @@ wx.request({
 
 既然都获取到请求数据了，再不分析下都感觉对不起这么多的数据了，让我们把选项卡从**Response**移到**Headers**上，我们惊讶的发现竟然出现了好多东西：
 
-![](https://upload-images.jianshu.io/upload_images/5666077-f13ba2a0b85a0801.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://cdn.ytools.xyz/uPic/5666077-f13ba2a0b85a0801.jpg)
 
 这里我们简单说明下各个参数：
 
@@ -195,7 +195,7 @@ wx.request({
 
 首先是 General 部分：
 
-![](https://upload-images.jianshu.io/upload_images/5666077-959b767f97475b12.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://cdn.ytools.xyz/uPic/5666077-959b767f97475b12.jpg)
 
 我们可以看出，请求地址是`https://web-api.juejin.im/query`，请求方法为 POST 方法，请求状态是 200，也就是请求成功了，同时还可以知道这次请求的 IP 地址是`119.254.97.159:443`。
 
@@ -205,13 +205,13 @@ wx.request({
 
 #### Headers 部分
 
-![](https://upload-images.jianshu.io/upload_images/5666077-76f391a98c9b1297.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://cdn.ytools.xyz/uPic/5666077-76f391a98c9b1297.jpg)
 
-![](https://upload-images.jianshu.io/upload_images/5666077-d5149867577d3b8d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://cdn.ytools.xyz/uPic/5666077-d5149867577d3b8d.jpg)
 
 接下来是 Response Headers 和 Request Headers，这里说实话我觉得没什么好说的，稍微有些重要的就是请求体**Content-Type**，为什么说他重要呢？我们往下看。
 
-![](https://upload-images.jianshu.io/upload_images/5666077-7575e5856ab16c69.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://cdn.ytools.xyz/uPic/5666077-7575e5856ab16c69.jpg)
 
 接下来一段是**Request Payload**，**Form Data**我们比较熟悉，那这个**Request Payload**又是个什么东西呢？我们知道前端开发中经常会用到 AJAX 发送异步请求，对于 POST 类型的请求会附带请求数据。而常用的传参方式有两种，其一是 Form Data，另一个就是 Request Payload 了。
 
@@ -244,7 +244,3 @@ wx.request({
 5. [微信开放文档](https://developers.weixin.qq.com/miniprogram/dev/api/network/request/wx.request.html)
 6. [fetch API 简介](http://bubkoo.com/2015/05/08/introduction-to-fetch/)
 7. [Referrer Policy 介绍](https://imququ.com/post/referrer-policy.html)
-
----
-
-![](https://upload-images.jianshu.io/upload_images/5666077-e3a4d5b87f8ef4d4.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
