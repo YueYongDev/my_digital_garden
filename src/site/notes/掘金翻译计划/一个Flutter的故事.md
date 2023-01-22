@@ -1,5 +1,5 @@
 ---
-{"title":"【译】Slidable： 一个有关 Flutter 的故事","categories":["外文翻译"],"tags":["掘金翻译计划","Flutter"],"dg-publish":true,"cover":"https://user-gold-cdn.xitu.io/2018/7/30/164e93653902d36d?w=800&h=694&f=png&s=62625","permalink":"/掘金翻译计划/一个Flutter的故事/","dgPassFrontmatter":true}
+{"title":"【译】Slidable： 一个有关 Flutter 的故事","categories":["外文翻译"],"tags":["掘金翻译计划","Flutter"],"dg-publish":true,"permalink":"/掘金翻译计划/一个Flutter的故事/","dgPassFrontmatter":true}
 ---
 
 
