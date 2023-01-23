@@ -1,5 +1,5 @@
 ---
-{"title":"【译】在Android上实现Google Inbox样式的动画","tags":["掘金翻译计划,Android"],"cover":"https://cdn.ytools.xyz/uPic/1671a9358d506438~tplv-t2oaga2asx-image.jpeg","dg-publish":true,"permalink":"/掘金翻译计划/在Android上实现Google-Inbox的样式动画/","dgPassFrontmatter":true}
+{"title":"【译】在Android上实现Google Inbox样式的动画","tags":["掘金翻译计划,Android"],"banner":"https://cdn.ytools.xyz/uPic/1671a9358d506438~tplv-t2oaga2asx-image.jpeg","dg-publish":true,"permalink":"/掘金翻译计划/在Android上实现Google-Inbox的样式动画/","dgPassFrontmatter":true}
 ---
 
 
